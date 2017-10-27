@@ -28,6 +28,11 @@ class Admin extends Common_Controller {
             }
         }
     }
+    
+    public function logAuth(){
+        $this->data['title'] = $this->lang->line('login_heading');
+         $this->load->view('login_new', $this->data);
+    }
 
     /**
      * @method login
